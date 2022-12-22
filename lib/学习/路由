@@ -1,0 +1,10 @@
+
+Flutter 路由跳转,就是页面跳转 在Flutter叫路由跳转
+Flutter 提供了 Navigator.of(context).push()  跳转页面  Navigator.of(context).pop  返回上个页面
+
+Flutter  Navigator路由分为普通路由(  Navigator.of(context).push()) 和命名路由(  Navigator.of(context).pushNamed())
+
+路由跳转:
+   Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext bulid){
+              return search(title: "搜索",userid: 10010,);
+            }));

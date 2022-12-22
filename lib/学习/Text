@@ -1,0 +1,58 @@
+Text:文字显示的控件
+
+
+构造:
+ const Text(
+    String this.data, {
+    super.key,
+    this.style,
+    this.strutStyle,
+    this.textAlign,
+    this.textDirection,
+    this.locale,
+    this.softWrap,
+    this.overflow,
+    this.textScaleFactor,
+    this.maxLines,
+    this.semanticsLabel,
+    this.textWidthBasis,
+    this.textHeightBehavior,
+    this.selectionColor,
+  })
+属性:
+1.data 展示的文字
+2.decoration: 文字装饰 TextDecoration.overline,
+
+3.
+2.style text的Style  类型(TextStyle)
+    2.1 TextStyle() 文字的style
+        构造:
+        const TextStyle({
+            this.inherit = true,
+            this.color, 字体颜色
+            this.backgroundColor, 背景色
+            this.fontSize, 文字大小
+            this.fontWeight,
+            this.fontStyle, 文字style
+            this.letterSpacing,
+            this.wordSpacing,文字间距
+            this.textBaseline,
+            this.height, 文字高度
+            this.leadingDistribution,
+            this.locale,
+            this.foreground,
+            this.background, 文字背景色
+            this.shadows, 文字阴影
+            this.fontFeatures,
+            this.fontVariations,
+            this.decoration, decoration: TextDecoration.lineThrough  中间划线
+            this.decorationColor,
+            this.decorationStyle,
+            this.decorationThickness,
+            this.debugLabel,
+            String? fontFamily,
+            List<String>? fontFamilyFallback,
+            String? package,
+            this.overflow,
+          })
+

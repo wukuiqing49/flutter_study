@@ -1,0 +1,9 @@
+StatelessWidget和StatefulWidget的区别
+StatelessWidget:无状态组件
+StatefulWidget:有状态组件
+StatelessWidget和 StatefulWidget 都是继承 Widget
+
+Widget 用@immutable 修饰了表示了所有子类型 都是不可变的
+所以本质上 StatelessWidget 和 StatefulWidget 是不可变的 .但是StatefulWidget维护了一个 State<StatefulWidget>组件
+
+当状态改变的时候调用setState()方法  会调用组件的重建

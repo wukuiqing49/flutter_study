@@ -1,0 +1,39 @@
+name: flutter_study
+description: A new Flutter application.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.5 <3.0.0'
+dependencies:
+  #路由控件
+  go_router: ^5.2.4
+  path_to_regexp: ^0.4.0
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
+
+#资源文件配置
+  assets:
+    - images/ic_launcher.png
+    - images/2.0x/ic_launcher.png
+    - images/3.0x/ic_launcher.png
+  #自定义字体和图标 ICON
+  fonts:
+    - family: HomeIcon
+      fonts:
+        - asset: fonts/home_iconfont.ttf
+          style: italic
+
+

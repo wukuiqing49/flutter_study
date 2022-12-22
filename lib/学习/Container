@@ -1,0 +1,27 @@
+Container:一个方便的小部件，它结合了常见的绘画、定位和调整小部件。
+构造:
+Container({
+    super.key,
+    this.alignment,Alignment.center 位置(居中)
+    this.padding,等同于android pading
+    this.color,
+    this.decoration,const BoxDecoration(color: Colors.green) :背景  borderRadius: BorderRadius.all(Radius.circular(10.0)) 圆角  border:  Border.all(color:  Colors.red,width: 10) 边
+
+    //   decoration: BoxDecoration(color: Colors.green,
+                    borderRadius:  const BorderRadius.all(Radius.circular(10.0)),//边角
+                    border:  Border.all(color:  Colors.red,width: 10),//边
+                    boxShadow: const [ BoxShadow(color: Colors.black,blurRadius: 5.0)] ,//阴影
+                  gradient: const LinearGradient(colors:[Colors.amberAccent,Colors.amber] )//背景渐变
+                )
+
+    this.foregroundDecoration,
+    double? width, 宽
+    double? height,  高
+    BoxConstraints? constraints,
+    this.margin, 边距
+    this.transform, 变换
+    this.transformAlignment,
+    this.child, 子控件
+    this.clipBehavior = Clip.none,
+  })
+
