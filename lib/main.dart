@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_study/route/RoutesUtil.dart';
+import 'package:flutter_study/route/NewsPage.dart';
+import 'package:flutter_study/route/RouterPage.dart';
+import 'package:flutter_study/route/RouterSetting.dart';
+import 'package:flutter_study/route/RouterSetting.dart';
+import 'package:flutter_study/route/RouterSetting.dart';
+import 'package:flutter_study/route/RouterSetting.dart';
 import 'package:go_router/go_router.dart';
 
 import 'package:flutter_study/HomeIcon.dart';
@@ -38,8 +43,18 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: "这是测试",
+      theme: ThemeData(
+        backgroundColor: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
 
+      //1.配置路由
+      initialRoute: "/",
+      // 2.命名路由传递参数配置
+      onGenerateRoute:onGenerateRouteIos,
     );
   }
 }
