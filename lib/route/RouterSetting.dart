@@ -4,10 +4,22 @@ import 'dart:core';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../pages/animation/AnimatedContainerPage.dart';
+import '../pages/animation/AnimatedDefultTextStylePage.dart';
+import '../pages/animation/AnimatedDemoPage.dart';
+import '../list/AnimationList.dart';
+import '../pages/KeyPage.dart';
+import '../pages/animation/AnimatedOpacityPage.dart';
+import '../pages/animation/AnimatedPaddingPage.dart';
+import '../pages/animation/AnimatedPositionedPage.dart';
+import '../pages/animation/AnimatedSwitcherPage.dart';
+import '../pages/banner/CustomPageViewKeepAlivePage.dart';
 import '../pages/banner/CustomPageViewPage.dart';
 import '../pages/banner/PageViewPage.dart';
 import '../pages/dialog/CustomDialog.dart';
 import '../pages/dialog/DialogPage.dart';
+import '../pages/home/HeroPage.dart';
+import '../pages/home/HomeGirdPage.dart';
 import '../pages/regist/FinishPage.dart';
 import '../pages/regist/LoginPage.dart';
 import '../pages/regist/RegisterPage.dart';
@@ -25,6 +37,18 @@ import 'NewsPage.dart';
   "/DialogPage": (context) => const DialogPage(),
   "/PageViewPage": (context) => const PageViewPage(),
   "/CustomPageViewPage": (context) => const CustomPageViewPage(),
+  "/AnimationList": (context) => const AnimationList(),
+  "/AnimatedDemoPage": (context) => const AnimatedDemoPage(),
+  "/AnimatedContainerPage": (context) => const AnimatedContainerPage(),
+  "/AnimatedPaddingPage": (context) => const AnimatedPaddingPage(),
+  "/AnimatedPositionedPage": (context) => const AnimatedPositionedPage(),
+  "/AnimatedOpacityPage": (context) => const AnimatedOpacityPage(),
+  "/AnimatedDefultTextStylePage": (context) => const AnimatedDefultTextStylePage(),
+  "/AnimatedSwitcherPage": (context) => const AnimatedSwitcherPage(),
+  "/CustomPageViewKeepAlivePage": (context) => const CustomPageViewKeepAlivePage(),
+  "/KeyPage": (context) => const KeyPage(),
+  "/HomeGirdPage": (context,{arguments}) =>  HomeGirdPage(arguments: arguments),
+  "/HeroPage": (context,{arguments}) =>  HeroPage(arguments: arguments),
   //命名路由传递参数
   "/ContentPage": (context, {arguments}) => ContentPage(arguments: arguments),
 

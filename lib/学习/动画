@@ -1,0 +1,27 @@
+ Flutter
+
+ 中动画包括隐式动画 显示动画,自定义隐式动画 自定义显示动画 和Hero 动画
+
+ Animation：
+ Flutter动画中的核心类，此类是抽象类，通常情况下使用其子类：
+
+
+
+ AnimationController，可以获取当前动画的状态和值，也可以添加其状态变化监听和值变化监听。
+ Curve：决定动画执行的曲线，和Android中的Interpolator（差值器）是一样的，负责控制动画变化的速率，
+        系统已经封装了10多种动画曲线，详见Curves类。差值器
+ AnimationController：动画控制器，控制动画的开始、停止。继承自Animation。
+ Tween：映射生成不同范围的值，AnimationController的动画值是double类型的，如果需要颜色的变化，Tween可以完成此工作。
+
+
+ 隐式动画
+ : 所谓隐式动画就是只需要设置动画目标，过程控制由系统实现
+ AnimatedContainer:容器动画
+ AnimatedSwitcher:不同控件间切换的过渡动画
+
+ 显示动画
+ :手动控制控制动画
+ AnimatedBuidler 自定义显示动画
+
+ // 透明度效果  opacity 透明度   动画时长curve 线程效果
+ AnimatedOpacity(opacity: 0.5, duration: Duration(milliseconds: 100),curve: Curves.bounceIn,child: ,)

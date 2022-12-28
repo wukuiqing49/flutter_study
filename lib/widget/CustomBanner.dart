@@ -12,7 +12,7 @@ class CustomBanner extends StatefulWidget {
   State<CustomBanner> createState() => _CustomBannerState();
 }
 
-class _CustomBannerState extends State<CustomBanner> {
+class _CustomBannerState extends State<CustomBanner> with AutomaticKeepAliveClientMixin  {
   int curIndex=0;
   late List<Widget> list;
 
@@ -44,6 +44,7 @@ class _CustomBannerState extends State<CustomBanner> {
   void dispose() {
     super.dispose();
     timer.cancel();
+    _controller.dispose();
   }
   @override
   Widget build(BuildContext context) {
@@ -84,4 +85,8 @@ class _CustomBannerState extends State<CustomBanner> {
       ],
     );
   }
+
+  @override
+  //  返回true 会保存页面
+  bool get wantKeepAlive => true;
 }
