@@ -4,6 +4,7 @@ import 'dart:core';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../pages/GetPage.dart';
 import '../pages/animation/AnimatedContainerPage.dart';
 import '../pages/animation/AnimatedDefultTextStylePage.dart';
 import '../pages/animation/AnimatedDemoPage.dart';
@@ -49,6 +50,7 @@ import 'NewsPage.dart';
   "/KeyPage": (context) => const KeyPage(),
   "/HomeGirdPage": (context,{arguments}) =>  HomeGirdPage(arguments: arguments),
   "/HeroPage": (context,{arguments}) =>  HeroPage(arguments: arguments),
+  "/GetPage": (context) =>  const GetPage(),
   //命名路由传递参数
   "/ContentPage": (context, {arguments}) => ContentPage(arguments: arguments),
 

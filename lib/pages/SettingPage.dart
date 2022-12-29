@@ -10,6 +10,10 @@ class SettingPage extends StatefulWidget {
 class _HomePageState extends State<SettingPage> {
   @override
   Widget build(BuildContext context) {
-    return Container(child: Text("设置"),);
+    return Container(child: Column(children: [
+      ElevatedButton(onPressed: (){
+      Navigator.pushNamed(context, "/GetPage");
+      }, child: Text("Get插件使用"))
+    ],),);
   }
 }

@@ -20,6 +20,8 @@ dependencies:
   fluttertoast: ^8.1.2
   #图片放大缩小控件
   photo_view: ^0.14.0
+  #状态管理
+  get: ^4.6.5
 
 dev_dependencies:
   flutter_test:

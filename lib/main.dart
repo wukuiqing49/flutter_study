@@ -5,6 +5,7 @@ import 'package:flutter_study/route/RouterSetting.dart';
 import 'package:flutter_study/route/RouterSetting.dart';
 import 'package:flutter_study/route/RouterSetting.dart';
 import 'package:flutter_study/route/RouterSetting.dart';
+import 'package:get/get.dart';
 import 'package:go_router/go_router.dart';
 
 import 'package:flutter_study/HomeIcon.dart';
@@ -43,7 +44,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: "这是测试",
       theme: ThemeData(
